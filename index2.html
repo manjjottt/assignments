@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes mk1 {
+        100% {
+          transform: translateX(100vw);
+        }
+      }
+      @keyframes mk2 {
+        100% {
+          transform: translateX(-50vw);
+        }
+      }
+      .k1 {
+        width: 50%;
+        height: 127px;
+        border-radius: 10px;
+        background: linear-gradient(
+          to right,
+          rgb(6, 6, 231),
+          rgb(192, 242, 255)
+        );
+        color: white;
+        display: grid;
+        place-content: center;
+      }
+
+      .k1:nth-of-type(1) {
+        position: relative;
+        right: 100vw;
+        animation: mk1 1.5s forwards;
+      }
+      .k1:nth-of-type(2) {
+        position: relative;
+        left: 100vw;
+        animation: mk2 1.5s forwards;
+      }
+      .k1:nth-of-type(3) {
+        position: relative;
+        right: 100vw;
+        animation: mk1 1.5s forwards;
+      }
+      .k1:nth-of-type(4) {
+        position: relative;
+        left: 100vw;
+        animation: mk2 1.5s forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="k1">1</div>
+    <div class="k1">2</div>
+    <div class="k1">3</div>
+    <div class="k1">4</div>
+  </body>
+</html>
